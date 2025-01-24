@@ -8,9 +8,9 @@ function App() {
     <>
       <PosterComponent />
        {/* <GenreList />  */}
-      <Routes>
+      {/* <Routes>
         
-      </Routes>
+      </Routes> */}
 
 
 

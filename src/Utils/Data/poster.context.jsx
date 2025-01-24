@@ -23,11 +23,11 @@ const PosterProvider = ({ children }) => {
 
     useEffect(() => {
         getData();
-    }, []); // Only run once on mount
+        console.log(posterList);
+        
+    }, [children, supabase]); // Only run once on mount
 
-    useEffect(() => {
-        console.log('Poster list updated:', posterList);
-    }, [posterList]); // Log when posterList changes
+    
 
     return (
         <PosterContext.Provider value={{ posterList, setPosterList }}>
@@ -37,5 +37,6 @@ const PosterProvider = ({ children }) => {
 };
 
 const usePoster = () => useContext(PosterContext);
+
 
 export { PosterProvider, usePoster };
