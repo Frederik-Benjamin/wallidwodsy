@@ -1,4 +1,4 @@
-import { usePoster } from "../Utils/Data/poster.context";
+import { usePoster } from "../../../Data/Posters/poster.context.jsx";
 
 export const PosterComponent = () => {
     const {posterList} = usePoster();

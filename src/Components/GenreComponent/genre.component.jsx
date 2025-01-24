@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import supabase from "../../Utils/Data/supabaseClient";
+import supabase from "../../Utils/supabaseClient";
 
 export const GenreList = () => {
     const [genreData, setGenreData] = useState([]);
