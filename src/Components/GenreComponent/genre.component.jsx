@@ -7,7 +7,7 @@ export const GenreList = () => {
     const getData = async () => {
         if (supabase) {
             const { data, error } = await supabase
-                .from('genre')
+                .from('genres')
                 .select('*');
             if (error) {
                 console.error('Error fetching data:', error);
@@ -25,7 +25,7 @@ export const GenreList = () => {
         <ul>
             {genreData
                 && genreData.map((genre) => (
-                    <li key={genre.id}>{genre.name}</li>
+                    <li key={genre.id}>{genre.title}</li>
                 ))}
         </ul>
     );
