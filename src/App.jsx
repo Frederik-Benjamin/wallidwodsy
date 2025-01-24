@@ -1,16 +1,20 @@
 import { Routes, Route } from "react-router-dom";
-import { PosterComponent } from "./Components/Posters/poster.component";
-import { GenreList } from "./Components/GenreComponent/genre.component";
+
+import { Navigation } from "./Components/Navigation/Navigation";
+
+import { FrontPage } from "./Pages/FrontPage/FrontPage";
+import { PostersPage } from "./Pages/Posters/PosterPage";
 
 function App() {
 
   return (
     <>
-      <PosterComponent />
-       {/* <GenreList />  */}
-      {/* <Routes>
-        
-      </Routes> */}
+    <Navigation />
+       
+      <Routes>
+        <Route path="/" element={<FrontPage />} />
+        <Route path="/Posters" element={<PostersPage />} />
+      </Routes>
 
 
 
