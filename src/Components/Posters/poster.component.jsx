@@ -4,10 +4,6 @@ import { Grid } from "../Grid/Grid.jsx";
 import { PosterStyled } from "./PosterStyled.js";
 
 
-const AddToCart = (data) => {
-    console.log(`${data.name} added to cart`);
-  };
-
 export const PosterComponent = () => {
     const { posterList } = usePoster();
   
