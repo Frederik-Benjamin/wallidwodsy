@@ -1,9 +1,9 @@
 import { ButtonStyled } from './ButtonStyled';
 
-export const Button = ({ children }) => {
+export const ButtonComponent = props => {
     return (
         <ButtonStyled>
-            {children}
+            {props.text}
         </ButtonStyled>
     )
 }

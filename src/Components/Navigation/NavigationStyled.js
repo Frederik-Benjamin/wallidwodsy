@@ -13,9 +13,11 @@ justify-content: space-between;
 text-transform: uppercase;
 align-items: flex-end;
 
-    h1 {
+    h1 a {
     font-size: 50px;
     margin: 0;
+    color: #D97852;
+    text-decoration: none;
     }
 
     ul {

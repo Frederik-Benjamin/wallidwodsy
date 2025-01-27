@@ -1,5 +1,4 @@
 import { CardStyled } from './CardStyled';
-import { Button } from '../Button/Button';
 
 
 export const Card = ({ name, slug, description, image, width, height, price, stock, created_at, updated_at }) => {

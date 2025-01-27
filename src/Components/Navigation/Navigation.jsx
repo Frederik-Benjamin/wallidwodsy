@@ -8,7 +8,7 @@ export const Navigation = () => {
         <NavigationStyled>
 
             <div>
-                <h1>Wallywood</h1>
+                <h1><NavLink to="/">Wallywood</NavLink></h1>
 
                 <ul>
                     <li> <NavLink to="/">Forside</NavLink> </li> 
