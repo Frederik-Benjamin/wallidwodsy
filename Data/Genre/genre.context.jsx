@@ -11,11 +11,11 @@ const GenreProvider = ({ children }) => {
             const { data, error } = await supabase
                 .from('genres')
                 .select('*');
-            console.log('Fetching data...');
+            // console.log('Fetching data...');
             if (error) {
-                console.error('Error fetching data:', error);
+                // console.error('Error fetching data:', error);
             } else {
-                console.log('Data fetched:', data);
+                // console.log('Data fetched:', data);
                 setGenreList(data);
             }
         }
