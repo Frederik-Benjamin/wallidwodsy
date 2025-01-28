@@ -3,7 +3,6 @@ import LikeButtonSvg from "../../Assets/Images/LikeButton.svg";
 
 export const LikeButton = ({ buttonPosterId }) => {
 
-    console.log(LikeButtonSvg);
     
     return (
         <ButtonComponent
