@@ -5,24 +5,28 @@ export const NavigationStyled = styled.nav`
 display: flex;
 flex-direction: column;
 gap: 2rem;
-padding: 4rem 2rem 0 2rem;
+padding: 2rem 2rem 0 2rem;
+margin: 0;
+background-color: white;
 
-div {
-display: flex;
-justify-content: space-between;
-text-transform: uppercase;
-align-items: flex-end;
 
-    h1 {
-    font-size: 50px;
-    margin: 0;
-    }
-
-    ul {
+h1 {
     display: flex;
-    align-items: flex-end;
+    font-size: 60px;
+    align-items: baseline;
+    margin: 0;
+
+    span{
+        font-size: 40px;
+    }
+}
+
+ul {
+    display: flex;
+    justify-content: flex-end;
     gap: 3rem;
     padding: 0;
+    padding-right: 7rem;
     margin: 0;
 
         li {
@@ -31,6 +35,7 @@ align-items: flex-end;
         white-space: nowrap;
         list-style: none;
         padding: 0;
+        margin: 0;
 
             a {
             font-size: 18px;
@@ -40,13 +45,20 @@ align-items: flex-end;
             }
         }
     }
+
+.basketImage {
+width: 40px;
+height: 40px;
+transition: 400ms;
 }
 
-img {
-width: 35px;
+.basketImage:hover {
+    cursor: pointer;
+    transition: 400ms;
+    scale: 1.4;
 }
 
-span {
+.spaceLine {
 width: 100%;
 height: 3px;
 position: relative;

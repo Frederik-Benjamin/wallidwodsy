@@ -1,12 +1,9 @@
 import styled from "styled-components"; 
 
-export const PosterStyled = styled.ul`
+export const PosterStyled = styled.div`
 
 text-align: center;
-padding: 0;
 
-img {
-    width: 100%;
-}
+
 
 `

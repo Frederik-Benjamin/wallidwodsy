@@ -7,8 +7,7 @@ export const GenreComponent = () => {
     return (
         <Genrestyled>
 
-            <h3>Filtre</h3>
-            <h4>Genre</h4>
+            <h3>Filtrer genre:</h3>
             
             {genreList && genreList.map((data) => {
                 return (
