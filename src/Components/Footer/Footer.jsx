@@ -19,10 +19,6 @@ export const Footer = () => {
             </div>
 
             <div>
-                <icon>P</icon>
-                <icon>I</icon>
-                <icon>F</icon>
-                <icon>T</icon>
             </div>
         </FooterStyled>
     )

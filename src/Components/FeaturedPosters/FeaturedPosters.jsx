@@ -22,6 +22,8 @@ export const FeaturedPosters = () => {
                         height ={data.height}
                         price  ={data.price}
                         buttonText="Læs mere"
+                        buttonClickType="singlePoster"
+                        buttonPosterId={data.id}
                         />
 
                     </FeaturedPosterStyled>
