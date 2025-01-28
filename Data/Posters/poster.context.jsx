@@ -8,18 +8,14 @@ const PosterProvider = ({ children }) => {
     const [featuredPoster, setFeaturedPoster] = useState([]);
 
     const getData = async () => {
-        if (supabase) {
-            const { data, error } = await supabase
-                .from('posters')
-                .select('*');
-            // console.log('Fetching data...');
-            if (error) {
-                console.error('Error fetching data:', error);
-            } else {
-                console.log('Data fetched:', data);
-                setPosterList(data);
-                setRandomFeaturedPosters(data);
-            }
+        const { data, error } = await supabase
+            .from('posters')
+            .select('*');
+        if (!error) {
+            setPosterList(data);
+            setRandomFeaturedPosters(data);
+        } else {
+            console.error('Error fetching data:', error);
         }
     };
 
@@ -33,17 +29,13 @@ const PosterProvider = ({ children }) => {
 
     useEffect(() => {
         getData();
-
     }, []);
-    
 
     useEffect(() => {
         if (featuredPoster.length > 0) {
             console.log('Featured posters:', featuredPoster);
         }
-    }, [featuredPoster]); 
-
-
+    }, [featuredPoster]);
 
     return (
         <PosterContext.Provider value={{ posterList, featuredPoster }}>
@@ -52,7 +44,8 @@ const PosterProvider = ({ children }) => {
     );
 };
 
-const usePoster = () => useContext(PosterContext);
-
+const usePoster = () => {
+    return useContext(PosterContext);
+};
 
 export { PosterProvider, usePoster };

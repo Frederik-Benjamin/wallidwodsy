@@ -6,7 +6,7 @@ display: flex;
 gap: 5rem;
 
 h2 {
-    margin-top: 0;
+margin-top: 0;
 }
 `;
 

@@ -1,6 +1,6 @@
 import { PosterPageStyled } from "./PosterPageStyled";
-import { PosterComponent } from "../../Components/Posters/poster.component";
 import { GenreComponent } from "../../Components/Genre/genre.component";
+import { Outlet } from "react-router-dom";
 
 
 export const PostersPage = () => {
@@ -13,8 +13,9 @@ export const PostersPage = () => {
                 <GenreComponent />
             </div>
 
-            
-            <PosterComponent />
+            <div>
+                <Outlet />
+            </div>
            
 
         </PosterPageStyled>

@@ -10,12 +10,13 @@ margin: 0;
 background-color: white;
 
 .spaceLinje {
-    width: 100%;
+    width: 87%;
     height: 3px;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
     background-color: orange;
+    
 }
 
 
@@ -50,7 +51,7 @@ ul {
         margin: 0;
 
             a {
-            font-size: 18px;
+            font-size: clamp(10px, 2vw, 18px);
             text-transform: uppercase;
             text-decoration: none;
             color: black;
