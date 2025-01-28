@@ -11,7 +11,9 @@ export const FeaturedPosters = () => {
         <Grid gridStyle="frontpage-grid">
             {featuredPoster &&
                 featuredPoster.map((data) => (
+                    
                     <FeaturedPosterStyled key={data.id}>
+                    
                         <Card cardStyle="featured-card"  
                         image  ={data.image}
                         name   ={data.name}
@@ -21,6 +23,11 @@ export const FeaturedPosters = () => {
                         price  ={data.price}
                         buttonText="Læs mere"
                         />
+
+
+
+                        <ButtonComponent text="Læs mere" />
+                    
 
                     </FeaturedPosterStyled>
 
