@@ -3,7 +3,7 @@ import { ButtonComponent } from '../Button/Button';
 
 
 
-export const Card = ({ name, slug, description, image, width, height, price, stock, created_at, updated_at, cardStyle }) => {
+export const Card = ({ name, slug, description, image, width, height, price, stock, created_at, updated_at, cardStyle, buttonText }) => {
 
     return (
         <CardStyled className={cardStyle}>
@@ -25,7 +25,7 @@ export const Card = ({ name, slug, description, image, width, height, price, sto
             {created_at  && <p>{created_at}</p>}
             {updated_at  && <p>{updated_at}</p>}
             </div>
-           <ButtonComponent text="Læs mere" />
+           <ButtonComponent text={buttonText} />
         </CardStyled>
     );
 };
