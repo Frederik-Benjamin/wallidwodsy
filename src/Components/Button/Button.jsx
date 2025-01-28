@@ -1,13 +1,16 @@
 import { ButtonStyled } from './ButtonStyled';
 import { usePoster } from '../../../Data/Posters/poster.context';
+import { useNavigate } from 'react-router-dom';
 
 export const ButtonComponent = ({ text, buttonClickType, buttonPosterId, buttonSvg }) => {
     const { posterList } = usePoster();
+    const navigate = useNavigate();
 
     const singlePoster = (id) => {
         const poster = posterList.find((data) => data.id === id);
         if (poster) {
-            console.log(poster);
+            navigate(`/posters/${poster.slug}`, { state: { poster } });
+            // console.log(poster);
         }
     }
 
