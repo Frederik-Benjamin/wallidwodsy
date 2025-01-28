@@ -10,14 +10,17 @@ margin: 0;
 background-color: white;
 
 
-h1 {
-    display: flex;
-    font-size: 60px;
-    align-items: baseline;
+
+    h1 a {
+    font-size: 50px;
     margin: 0;
+    color: #D97852;
+    text-decoration: none;
+
 
     span{
         font-size: 40px;
+
     }
 }
 

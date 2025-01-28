@@ -7,9 +7,9 @@ export const Navigation = () => {
     return (
         <NavigationStyled>
 
-            
-                <h1>Wallywood<span>'sy</span></h1>
-            
+
+            <div>
+                <h1><NavLink to="/">Wallywood</NavLink></h1>
 
                 <ul>
                     <li> <NavLink to="/">Forside</NavLink> </li> 
