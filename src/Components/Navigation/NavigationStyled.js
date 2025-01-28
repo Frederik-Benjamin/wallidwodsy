@@ -9,11 +9,20 @@ padding: 2rem 2rem 0 2rem;
 margin: 0;
 background-color: white;
 
+.spaceLinje {
+    width: 100%;
+    height: 3px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: orange;
+}
 
 
     h1 a {
     font-size: 50px;
     margin: 0;
+    padding-left: 7rem;
     color: #D97852;
     text-decoration: none;
 
@@ -61,13 +70,5 @@ transition: 400ms;
     scale: 1.4;
 }
 
-.spaceLine {
-width: 100%;
-height: 3px;
-position: relative;
-left: 50%;
-transform: translateX(-50%);
-background-color: orange;
-}
 
 `

@@ -24,8 +24,8 @@ export const Card = ({ name, slug, description, image, width, height, price, sto
             {stock       && <p>{stock}</p>}
             {created_at  && <p>{created_at}</p>}
             {updated_at  && <p>{updated_at}</p>}
+            <ButtonComponent text="Læs mere" />
             </div>
-           <ButtonComponent text="Læs mere" />
         </CardStyled>
     );
 };
