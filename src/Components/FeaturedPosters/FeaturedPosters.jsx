@@ -23,8 +23,11 @@ export const FeaturedPosters = () => {
                         price  ={data.price}
                         />
 
+
+
                         <ButtonComponent text="Læs mere" />
                     
+
                     </FeaturedPosterStyled>
 
                 ))}
