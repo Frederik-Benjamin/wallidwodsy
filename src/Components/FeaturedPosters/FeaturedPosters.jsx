@@ -21,6 +21,7 @@ export const FeaturedPosters = () => {
                         width  ={data.width}
                         height ={data.height}
                         price  ={data.price}
+                        buttonText="Læs mere"
                         />
 
                     </FeaturedPosterStyled>
