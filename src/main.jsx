@@ -6,6 +6,7 @@ import { PosterProvider } from "../Data/Posters/poster.context.jsx";
 import { GenreProvider } from "../Data/Genre/genre.context.jsx";
 
 import App from './App.jsx'
+import { GenreRelProvider } from "../Data/GenrePostRel/GenPostRel.jsx";
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -13,7 +14,9 @@ createRoot(document.getElementById('root')).render(
     <BrowserRouter>
       <GenreProvider>
         <PosterProvider>
+          <GenreRelProvider>
           <App />
+          </GenreRelProvider>
         </PosterProvider>
       </GenreProvider>
     </BrowserRouter>
