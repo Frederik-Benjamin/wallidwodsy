@@ -22,6 +22,7 @@ export const Navigation = () => {
                 </ul>
 
                 <span className="spaceLine"></span>
+            </div>
 
         </NavigationStyled>
     )
