@@ -1,5 +1,6 @@
 import { CardStyled } from './CardStyled';
 import { ButtonComponent } from '../Button/Button';
+import { LikeButton } from '../LikeButton/LikeButton.component';
 
 
 
@@ -24,11 +25,14 @@ export const Card = ({ name, slug, description, image, width, height, price, sto
                 {stock && <p>{stock}</p>}
                 {created_at && <p>{created_at}</p>}
                 {updated_at && <p>{updated_at}</p>}
-                <ButtonComponent
-                    text={buttonText}
-                    buttonClickType={buttonClickType}
-                    buttonPosterId={buttonPosterId}
-                />
+                <div className='postButtons'>
+                    <ButtonComponent
+                        text={buttonText}
+                        buttonClickType={buttonClickType}
+                        buttonPosterId={buttonPosterId}
+                    />
+                    <LikeButton id="likeButton" buttonPosterId={buttonPosterId} />
+                </div>
             </div>
         </CardStyled>
     );

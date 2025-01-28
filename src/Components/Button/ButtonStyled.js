@@ -8,6 +8,12 @@ export const ButtonStyled = styled.button`
     padding: 5px 10px;
     z-index: 1;
     cursor: pointer;
+    width: auto;
+
+    img {
+        width: 10px;
+        height: 10px;
+    }
 
 
 `

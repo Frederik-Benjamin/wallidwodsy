@@ -1,29 +1,28 @@
 import { ButtonStyled } from './ButtonStyled';
 import { usePoster } from '../../../Data/Posters/poster.context';
 
-export const ButtonComponent = ({text, buttonClickType, buttonPosterId}) => {
+export const ButtonComponent = ({ text, buttonClickType, buttonPosterId, buttonSvg }) => {
     const { posterList } = usePoster();
 
-    const singlePoster = (buttonPosterId) => {
-        const poster = posterList.find((data) => data.id === buttonPosterId);
+    const singlePoster = (id) => {
+        const poster = posterList.find((data) => data.id === id);
         if (poster) {
             console.log(poster);
         }
     }
-    // console.log(posterId);
-    
+
     const handleClick = () => {
-        if (buttonClickType == 'singlePoster') {
+        if (buttonClickType === 'singlePoster') {
             singlePoster(buttonPosterId);
         } else {
             console.log(buttonPosterId);
-            
         }
     }
 
     return (
-        <ButtonStyled  onClick={handleClick}>
+        <ButtonStyled onClick={handleClick}>
             {text}
+            {buttonSvg && <img src={buttonSvg} alt="button icon" />}
         </ButtonStyled>
-    )
-}
+    );
+};
