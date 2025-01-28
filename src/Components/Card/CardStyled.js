@@ -38,6 +38,8 @@ img {
     justify-content: center;
 }
 
+
+
 &.featured-card {
     
 display: grid;
@@ -58,5 +60,34 @@ grid-template-columns: repeat(2, 1fr);
     img {
         min-width: 300px;
     }
+
+    
 }
+
+.postButtons {
+        display: flex;
+        gap: 1rem;
+        img {
+            width: 20px;
+            height: 20px;
+            min-width: 20px;
+        min-height: 20px;
+        max-width: 20px;
+        max-height: 20px;
+
+        }
+        button:last-child {
+
+        }
+    }
+
+    #likeButton {
+        width: 20px;
+        height: 20px;
+        min-width: 20px;
+        min-height: 20px;
+        max-width: 20px;
+        max-height: 20px;
+    }
 `
+
