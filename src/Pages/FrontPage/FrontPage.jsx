@@ -19,6 +19,7 @@ export const FrontPage = () => {
                 </div>
            </div>
             
+
             <h2>Populære</h2>
             
             <FeaturedPosters />

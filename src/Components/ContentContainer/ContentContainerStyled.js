@@ -19,7 +19,7 @@ flex-direction: column;
     transform: translateX(-50%);
     background-color: orange;
 
-    margin-top: 5rem;
+    margin-top: 3rem;
 }
 
 `

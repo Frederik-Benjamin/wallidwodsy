@@ -24,11 +24,6 @@ export const FeaturedPosters = () => {
                         buttonText="Læs mere"
                         />
 
-
-
-                        <ButtonComponent text="Læs mere" />
-                    
-
                     </FeaturedPosterStyled>
 
                 ))}

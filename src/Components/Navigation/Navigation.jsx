@@ -7,9 +7,8 @@ export const Navigation = () => {
     return (
         <NavigationStyled>
 
-
             <div>
-                <h1><NavLink to="/">Wallywood</NavLink></h1>
+                <h1><NavLink to="/">Wallywood<span>'sy</span></NavLink></h1>
 
                 <ul>
                     <li> <NavLink to="/">Forside</NavLink> </li>
@@ -21,9 +20,7 @@ export const Navigation = () => {
                     <li><img className="basketImage" src={basket} alt="Kurv" /></li> {/*Kurv (modal)*/}
                 </ul>
 
-                <span className="spaceLine"></span>
-            </div>
-
+                <span className="spaceLinje"></span>
             </div>
 
         </NavigationStyled>
