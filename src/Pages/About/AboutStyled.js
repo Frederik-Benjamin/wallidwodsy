@@ -2,13 +2,16 @@ import styled from "styled-components";
 
 export const AboutStyled = styled.section`
 
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-gap: 2rem;
 
+article{
+}
+
+p{
+font-size: 20px;
+}
 
 h3{
-font-size: 25px;
+font-size: 35px;
 }
 
 img{

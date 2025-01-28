@@ -5,7 +5,7 @@ export const ContentContainerStyled = styled.div`
 background-color: white;
 padding: 3rem 10rem 3rem 10rem;
 height: auto;
-min-height: 100vh;
+/* min-height: 100vh; */
 max-width: 1500px;
 
 display: flex;

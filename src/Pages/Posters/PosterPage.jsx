@@ -16,8 +16,7 @@ export const PostersPage = () => {
             <div>
                 <Outlet />
             </div>
-           
-
+        
         </PosterPageStyled>
         </>
     )

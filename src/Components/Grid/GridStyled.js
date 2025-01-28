@@ -33,5 +33,18 @@ gap: 2rem;
   }
 }
 
+
+&.aboutpage-grid{
+
+  align-items: flex-end;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  @media (max-width: 1100px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 `;
 

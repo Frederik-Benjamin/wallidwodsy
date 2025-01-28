@@ -23,7 +23,6 @@ export const FrontPage = () => {
             <h2>Populære</h2>
             
             <FeaturedPosters />
-            console.log('Featured posters:', featuredPoster);
 
         </FrontPageStyled>
         </>
