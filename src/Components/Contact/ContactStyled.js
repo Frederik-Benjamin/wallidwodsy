@@ -9,7 +9,6 @@ export const ContactStyled = styled.div`
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
   background: #fefefe;
   color: #333;
-  font-family: Arial, sans-serif;
 
   h2 {
     text-align: center;

@@ -61,8 +61,8 @@ ul {
         }
 
         .basketImage {
-        width: 40px;
-        height: 40px;
+        width: 35px;
+        height: 35px;
         transition: 400ms;
         }
 
