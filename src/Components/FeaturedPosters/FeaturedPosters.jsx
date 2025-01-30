@@ -23,11 +23,7 @@ export const FeaturedPosters = () => {
                         <Card cardStyle="featured-card"
                             image={data.image}
                             name={data.name}
-<<<<<<< HEAD
-                            slug={data.slug.replace('-', ' ').toLowerCase()}
-=======
                             slug={data.slug.replace(/-/g, ' ')}
->>>>>>> a51f48ff8b09e4552371273f301871f1272b9ed4
                             width={data.width}
                             height={data.height}
                             price={data.price}
