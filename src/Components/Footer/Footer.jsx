@@ -4,8 +4,10 @@ export const Footer = () => {
     return (
         <>
         <FooterStyled>
-        <span className="spaceLinje"></span>
 
+        <span className="spaceLinje2"></span>
+
+        <div>
         
             <div className="InfoFooter">
                 <ul>
@@ -21,8 +23,7 @@ export const Footer = () => {
                 </ul>
             </div>
 
-            <div>
-            </div>
+        </div>
         </FooterStyled>
         </>
     )
