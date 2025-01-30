@@ -7,6 +7,7 @@ import { FrontPage } from "./Pages/FrontPage/FrontPage";
 import { PostersPage } from "./Pages/Posters/PosterPage";
 import { SinglePosterPage } from "./Pages/SinglePoster/SingplePoster.page";
 import { AboutUsPage } from "./Pages/About/AboutPage";
+import { ContactPage } from "./Pages/Contact/ContactPage";
 import { PosterComponent } from "./Components/Posters/poster.component";
 import { ContentContainer } from "./Components/ContentContainer/ContentContainer";
 
@@ -32,6 +33,8 @@ function App() {
 
           {/* About Us Page */}
           <Route path="/About" element={<AboutUsPage />} />
+
+          <Route path="/Contact" element={<ContactPage />} />
 
         </Routes>
       </ContentContainer>
