@@ -8,13 +8,19 @@ import { PostersPage } from "./Pages/Posters/PosterPage";
 import { SinglePosterPage } from "./Pages/SinglePoster/SingplePoster.page";
 import { AboutUsPage } from "./Pages/About/AboutPage";
 import { ContactPage } from "./Pages/Contact/ContactPage";
+// import { LogInPage } from "./Pages/LogIn/SignIn/SignInPage";
+
+import { SignInPage } from "./Pages/LogIn/SignIn/SignInPage";
+import { SignUpPage } from "./Pages/LogIn/SignUp/SignUpPage"
+import { DashboardPage } from "./Pages/LogIn/Dashboard/DashboardPage"
+
 import { PosterComponent } from "./Components/Posters/poster.component";
 import { ContentContainer } from "./Components/ContentContainer/ContentContainer";
 
 function App() {
   return (
     <>
-   
+    
       <Navigation />
       <ContentContainer>
         <Routes>
@@ -35,6 +41,11 @@ function App() {
           <Route path="/About" element={<AboutUsPage />} />
 
           <Route path="/Contact" element={<ContactPage />} />
+
+          {/* <Route path="/LogIn" element={<LogInPage />} /> */}
+          <Route path="/LogIn" element={<SignUpPage />} />
+          <Route path="/SignIn" element={<SignInPage />} />
+          <Route path="/Dashboard" element={<DashboardPage />} />
 
         </Routes>
       </ContentContainer>

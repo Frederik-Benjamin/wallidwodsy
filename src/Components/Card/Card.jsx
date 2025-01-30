@@ -47,8 +47,8 @@ export const Card = ({
                     {/* Buttons section */}
                 <div className="postButtons">
                     <ButtonComponent
-                        text={buttonText}
-                        onClick={() => buttonClickType(buttonPosterId)} // Videregiv poster ID
+                    text={buttonText}
+                    onClick={() => buttonClickType(buttonPosterId)} 
                     />
                     <LikeButton id="likeButton" buttonPosterId={buttonPosterId} />
                 </div>

@@ -33,7 +33,7 @@ const PosterProvider = ({ children }) => {
 
     useEffect(() => {
         if (featuredPoster.length > 0) {
-            console.log('Featured posters:', featuredPoster);
+            // console.log('Featured posters:', featuredPoster);
         }
     }, [featuredPoster]);
 

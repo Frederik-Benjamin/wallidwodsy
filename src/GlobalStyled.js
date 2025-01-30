@@ -3,7 +3,7 @@ import { createGlobalStyle } from "styled-components";
 
 
 export const GlobalStyled = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap'); */
 
 html,
 body {

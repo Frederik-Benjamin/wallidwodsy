@@ -26,7 +26,7 @@ padding: 0;
 .spaceLinje2 {
 width: 100%;
 height: 3px;
-    
+margin-bottom: 2rem;
 left: 50%;
 background-color: orange;
 }
