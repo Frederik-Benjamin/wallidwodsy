@@ -1,6 +1,7 @@
 import { CardStyled } from "./CardStyled";
 import { ButtonComponent } from "../Button/Button";
 import { LikeButton } from "../LikeButton/LikeButton.component";
+import parse from "html-react-parser";
 
 export const Card = ({
     cardStyle,
@@ -29,7 +30,7 @@ export const Card = ({
             <div className="postInfoSection">
                 <div className="postInfo">
                     {name && <h3>{name}</h3>}
-                    {description && <p>{description}</p>}
+                    {description && parse(description)}
                     {slug && <p>{slug}</p>}
                 </div>
                 <div className="postSizeInfo">
