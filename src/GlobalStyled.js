@@ -15,7 +15,7 @@ min-height: 100vh;
 background-color:rgb(157, 129, 118);
 }
 body {
-min-width: 750px;
+/* min-width: 750px; */
 display: flex;
 justify-content: center;
 }

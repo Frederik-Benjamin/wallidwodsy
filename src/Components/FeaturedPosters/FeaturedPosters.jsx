@@ -20,8 +20,8 @@ export const FeaturedPosters = () => {
             {featuredPoster &&
                 featuredPoster.map((data) => (
                     <FeaturedPosterStyled key={data.id}>
-                        <Card
-                            cardStyle="featured-card"
+                        <Card cardStyle="featured-card"
+                        
                             image={data.image}
                             name={data.name}
                             slug={data.slug}

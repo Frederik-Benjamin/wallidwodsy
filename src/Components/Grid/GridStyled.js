@@ -6,7 +6,7 @@ display: grid;
 gap: 2rem;
 
 
-&.poster-grid {
+&.posterpage-grid {
   grid-template-columns: repeat(3, 1fr);
 
   @media (max-width: 1600px) {

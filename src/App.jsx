@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom";
+
 import { Navigation } from "./Components/Navigation/Navigation";
 import { Footer } from "./Components/Footer/Footer";
 
@@ -12,6 +13,7 @@ import { ContentContainer } from "./Components/ContentContainer/ContentContainer
 function App() {
   return (
     <>
+   
       <Navigation />
       <ContentContainer>
         <Routes>
@@ -34,6 +36,7 @@ function App() {
         </Routes>
       </ContentContainer>
       <Footer />
+     
     </>
   );
 }

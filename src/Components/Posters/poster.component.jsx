@@ -31,9 +31,8 @@ export const PosterComponent = () => {
 
     // Returnerer grid med filtrerede posters
     return (
-        <Grid gridStyle="poster-grid">
-            {genreRelation 
-            && filteredPosters.map((data) => (
+        <Grid gridStyle="posterpage-grid">
+            {filteredPosters.map((data) => (
                 <PosterStyled key={data.id}>
                     <Card
                         image={data.image}

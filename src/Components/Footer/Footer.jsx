@@ -2,8 +2,11 @@ import { FooterStyled } from "./FooterStyled";
 
 export const Footer = () => {
     return (
+        <>
         <FooterStyled>
-            
+        <span className="spaceLinje"></span>
+
+        
             <div className="InfoFooter">
                 <ul>
                     <h1>Wallywood<span>'sy</span></h1>
@@ -21,5 +24,6 @@ export const Footer = () => {
             <div>
             </div>
         </FooterStyled>
+        </>
     )
 }

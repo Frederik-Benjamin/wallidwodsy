@@ -26,13 +26,13 @@ export const Card = ({
             </div>
 
             {/* Info section */}
-            <div>
+            <div className="postInfoSection">
                 <div className="postInfo">
                     {name && <h3>{name}</h3>}
                     {description && <p>{description}</p>}
                     {slug && <p>{slug}</p>}
                 </div>
-                <div className="postSize">
+                <div className="postSizeInfo">
                     {width && <p>B:{width}</p>}
                     {height && <p>H:{height}</p>}
                 </div>
@@ -42,16 +42,18 @@ export const Card = ({
                     {created_at && <p>{created_at}</p>}
                     {updated_at && <p>{updated_at}</p>}
                 </div>
+
+                    {/* Buttons section */}
+                <div className="postButtons">
+                    <ButtonComponent
+                        text={buttonText}
+                        onClick={() => buttonClickType(buttonPosterId)} // Videregiv poster ID
+                    />
+                    <LikeButton id="likeButton" buttonPosterId={buttonPosterId} />
+                </div>
             </div>
 
-            {/* Buttons section */}
-            <div className="postButtons">
-                <ButtonComponent
-                    text={buttonText}
-                    onClick={() => buttonClickType(buttonPosterId)} // Videregiv poster ID
-                />
-                <LikeButton id="likeButton" buttonPosterId={buttonPosterId} />
-            </div>
+           
         </CardStyled>
     );
 };

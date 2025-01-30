@@ -40,6 +40,7 @@ ul {
     gap: 3rem;
     padding: 0;
     padding-right: 7rem;
+    padding-left: 8rem;
     margin: 0;
 
         li {
@@ -49,27 +50,30 @@ ul {
         list-style: none;
         padding: 0;
         margin: 0;
+        font-size: clamp(8px, 1vw, 18px);
 
             a {
-            font-size: clamp(10px, 2vw, 18px);
+            
             text-transform: uppercase;
             text-decoration: none;
             color: black;
             }
         }
+
+        .basketImage {
+        width: 40px;
+        height: 40px;
+        transition: 400ms;
+        }
+
+        .basketImage:hover {
+            cursor: pointer;
+            transition: 400ms;
+            scale: 1.4;
+        }
+
     }
 
-.basketImage {
-width: 40px;
-height: 40px;
-transition: 400ms;
-}
-
-.basketImage:hover {
-    cursor: pointer;
-    transition: 400ms;
-    scale: 1.4;
-}
 
 
 `

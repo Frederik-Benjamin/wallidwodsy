@@ -4,22 +4,11 @@ export const ContentContainerStyled = styled.div`
 
 background-color: white;
 padding: 3rem 10rem 3rem 10rem;
-height: auto;
-/* min-height: 100vh; */
+height: 100%;
 max-width: 1500px;
+align-items: center;
 
 display: flex;
 flex-direction: column;
-
-.spaceLinje {
-    width: 100%;
-    height: 3px;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: orange;
-
-    margin-top: 3rem;
-}
 
 `
