@@ -1,4 +1,6 @@
 import { SinglePosterStyled } from "./SinglePoster.styled";
+import { ButtonComponent } from "../Button/Button";
+import { LikeButton } from "../LikeButton/LikeButton.component";
 import parse from "html-react-parser";
 
 // SinglePoster komponent
@@ -30,6 +32,10 @@ export const SinglePoster = ({ poster }) => {
                     {/* Pris og lagerstatus */}
                     {price && <p>Pris: Kr. {price}</p>}
                     {stock && <p>På lager: {stock}</p>}
+                </div>
+                <div className="posterButtons">
+                    <ButtonComponent text='Læg i kurv' />
+                    <LikeButton />
                 </div>
             </div>
         </SinglePosterStyled>

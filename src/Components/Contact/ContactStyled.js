@@ -26,6 +26,7 @@ export const ContactStyled = styled.div`
 
   input,
   textarea {
+    font-family: 'Quicksand', sans-serif;
     width: 100%;
     min-width: 500px;
     margin-top: 6px;

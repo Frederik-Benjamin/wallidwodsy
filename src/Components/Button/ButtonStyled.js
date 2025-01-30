@@ -9,6 +9,13 @@ export const ButtonStyled = styled.button`
     z-index: 1;
     cursor: pointer;
     width: auto;
+    transition: 0.25s;
+
+    &:hover {
+        background-color: rgb(226, 200, 150);
+        color: rgb(255, 255, 255);
+        border: 1px solid #524641;
+    }
 
     img {
         width: 10px;

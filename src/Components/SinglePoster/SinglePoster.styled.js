@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 export const SinglePosterStyled = styled.div`
 
+position: relative;
+
 
 .singlePosterContent {
     display: flex;
@@ -27,5 +29,13 @@ img{
     object-fit: contain;
     scale: 1/1;
 }
-
+.posterButtons {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    
+    button {
+        margin: 0.25rem;
+    }
+}
  `
