@@ -11,9 +11,9 @@ export const GenreComponent = () => {
         <Genrestyled>
             <h3>Filtrer genre:</h3>
             {genreList && genreList.map((data) => (
-                <li key={data.id}>
-                    <Link to={`/Posters/${data.id}`}>{data.title}</Link>
-                </li>
+                <Link to={`/Posters/${data.id}`}><li key={data.id}>
+                    {data.title}
+                </li></Link>
             ))}
         </Genrestyled>
     );

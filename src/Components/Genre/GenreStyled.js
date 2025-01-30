@@ -13,6 +13,7 @@ border: solid 2px rgb(193, 129, 10);
 border-radius: 5px;
 padding: 10px;
 width: 100px;
+transition: 0.2s;
 }
 
 li:hover{
@@ -21,5 +22,11 @@ li:hover{
     color: white;
     font-weight: 600;
     scale: 1.05;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
 }
 `
