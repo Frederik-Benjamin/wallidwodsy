@@ -24,7 +24,7 @@ export const FeaturedPosters = () => {
                         
                             image={data.image}
                             name={data.name}
-                            slug={data.slug}
+                            slug={data.slug.replace('-', ' ').toLowerCase()}
                             width={data.width}
                             height={data.height}
                             price={data.price}
