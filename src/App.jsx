@@ -28,8 +28,9 @@ function App() {
           {/* FrontPage */}
           <Route path="/" element={<FrontPage />} />
 
-          {/* Posters Section */}
+          {/* Posters Section - Parent Route */}
           <Route path="/Posters" element={<PostersPage />}>
+            {/* Child Routes */}
             <Route index element={<PosterComponent />} />
             <Route path=":genre_id" element={<PosterComponent />} />
           </Route>

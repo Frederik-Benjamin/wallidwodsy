@@ -25,9 +25,11 @@ export const AuthProvider = ({children}) => {
 
 
     // Sign In 
-    const SignInUser = async ({ email, password }) => {
+    const SignInUser = async ( email, password ) => {
+        console.log("Email:", email, "Password:", password);
+
         try {
-            const { data, error } = await supabase.auth.SignInWithPassword({
+            const { data, error } = await supabase.auth.signInWithPassword({
                 email: email, 
                 password: password,
             });
@@ -47,7 +49,7 @@ export const AuthProvider = ({children}) => {
     
     // Sign Out
     const SignOut = () => {
-        const { error } = supabase.auth.SignOut();
+        const { error } = supabase.auth.signOut();
         if (error) {
             console.log("there was an error:", error);
         };
