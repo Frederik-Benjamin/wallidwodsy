@@ -14,7 +14,7 @@ export const GenreComponent = () => {
                 <Link to={`/Posters/${data.id}`}><li key={data.id}>
                     {data.title}
                 </li></Link>
-            ))};
+            ))}
         </Genrestyled>
     );
 };

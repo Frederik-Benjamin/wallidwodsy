@@ -5,5 +5,4 @@ export const PosterStyled = styled.div`
 text-align: center;
 
 
-
 `
