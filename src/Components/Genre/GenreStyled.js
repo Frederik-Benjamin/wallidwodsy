@@ -20,9 +20,9 @@ transition: 0.2s;
 
 li:hover{
     cursor: pointer;
-    background-color: rgb(255, 171, 2);
+    background-color: rgb(249, 174, 23);
+    border-radius: 5px;
     color: white;
-    font-weight: 600;
     scale: 1.05;
 }
 
